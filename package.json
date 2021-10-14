@@ -1,0 +1,23 @@
+{
+  "name": "architecture-website-clone",
+  "version": "1.0.0",
+  "description": "This is a recreation of Hyde & Hyde's website for the Nucamp Bootstrap Portfolio Project",
+  "main": "index.html",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vanessa Alarcia",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
