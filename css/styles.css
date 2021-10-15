@@ -1,3 +1,14 @@
 body {
     font-family: 'Karla', sans-serif;
 }
+
+#hyde-logo {
+    width: 60px;
+    height: auto;
+}
+
+.mobile-bar {
+    padding: 20px;
+    margin: 0 !important;
+}
+
