@@ -5,10 +5,37 @@ body {
 #hyde-logo {
     width: 60px;
     height: auto;
+    margin-left: 50px;
+    
 }
+
 
 .mobile-bar {
-    padding: 20px;
-    margin: 0 !important;
+    padding: 10px 0;
 }
 
+.navbar-light .navbar-toggler{
+    border-color: transparent;
+    margin-right: 40px;
+}
+
+.jumbotron {
+    position: relative;
+    z-index: -1;
+    background: white;
+    padding: 0;
+    margin: 0;
+    
+}
+
+#jumbotron-title {
+    color: white;
+}
+
+#jumbotronVideo {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}

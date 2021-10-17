@@ -16,15 +16,33 @@
     <title>Architect Website</title>
 </head>
 <body>
-    
-    <div class="container mobile-bar">
-        <div class="row">
-            <div class="col">
-                <img id="hyde-logo" src="img/hhlogo.png" alt="Hyde and Hyde Logo"/>
-            </div>
+    <nav class="navbar navbar-light">
+        <div class="container-fluid mobile-bar">
+            <img id="hyde-logo" src="img/hhlogo.png" alt="Hyde and Hyde Logo"/>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarModal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
+    </nav>
+
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container container-fluid">
+            <video autoplay muted loop id="jumbotronVideo">
+                <source src="videos/pexels-mikhail-nilov-6497972.mp4" type="video/mp4">
+            </video>
+            <h1 id="jumbotron-title"><strong>Hyde + Hyde Architects</strong><br />We Build Emotion</h1>
+            
+        </div>
+    </header>
+
+    <div class="gallery">
+        <p>images go here</p>
     </div>
 
+    
+
+
+    
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
