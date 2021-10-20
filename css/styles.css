@@ -1,5 +1,7 @@
 body {
     font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 #hyde-logo {
@@ -19,23 +21,62 @@ body {
     margin-right: 40px;
 }
 
-.jumbotron {
-    position: relative;
-    z-index: -1;
-    background: white;
-    padding: 0;
-    margin: 0;
-    
-}
-
 #jumbotron-title {
     color: white;
+    font-size: 25px;
 }
 
-#jumbotronVideo {
+.jumbotron {
+    background-image: url(https://source.unsplash.com/_u8KhAZRGHs);
+    background-attachment: fixed;
+    background-size: 100%;
+    height:100vh;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.titleContainer {
+    top: 300px;
+    left: 0;
+    padding: 0;
+}
+
+/* #jumbotronVideo {
     position: absolute;
     width: 100vw;
     left: 0;
     overflow: hidden;
     z-index: -1;
+} */
+
+/*gallery css starts here*/
+.gallery-container {
+    margin: 0;
+    padding: 0;
+}
+
+/* .gallery-card-left {
+    margin:30px;
+    margin-left: 0px;
+} */
+
+.card, .jumbotron {
+    border-radius: 0;
+}
+
+.card-img {
+    height: 500px;
+}
+/*changes position of text in gallery to the bottom of the card*/
+.card-img-overlay {
+    margin-top: 400px;
+}
+
+.card-title {
+    font-size: 22px;
+}
+
+.card-subtitle {
+    font-size: 19px;
 }
