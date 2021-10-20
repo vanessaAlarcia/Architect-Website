@@ -1,3 +1,193 @@
 body {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.1;
+}
+
+#studio {
+    max-width: 100%;
+    height: auto;
+}
+
+.studio-caption {
+    color: white;
+    position: absolute;
+    top: 34px;
+    left: 55px;
+    text-align: left;
+
+}
+
+.studio-head-caption p {
+    margin: 0;
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.studio-subtitle p {
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.carousel-header {
+    padding-top: 25px;
+    padding-bottom: 17px;
+}
+
+.words {
+    font-size: 23px;
+}
+
+.multi-item-carousel {
+    position: relative;
+    height: 310px;
+}
+
+.carousel_image {
+    width: 100%;
+    height: 268px;
+    object-fit: cover; /*crops image when window is resized*/
+}
+
+.carousel_track-container {
+    height: 100%; /*makes this container take full length of 600px (which is the height of the .carousel)*/
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel_track {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    position: relative;
+    transition: transform 300ms ease-in;
+}
+
+.carousel-text {
+    padding-top: 8px;
+}
+
+.slide-row {
+    height: 270px;
+}
+
+.carousel_slide {
+    position: absolute; /*causes images to stack on top of eachother*/
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel_button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel_button--left {
+    z-index: 1;
+}
+
+.carousel_button--right {
+    z-index: 1; 
+}
+
+.carousel_button img {
+    width: 12px;
+}
+
+.is-hidden {
+    opacity: 0.3;
+}
+
+.quad-row {
+    height: 270px;
+    margin-bottom: 80px;
+}
+.cube {
+    background: #F9F9F9;
+    height: 89%;
+    margin-top: 20px;
+}
+
+.quad-words {
+    padding: 55px 18px;
+    color: #555;
+}
+
+.quad-words p {
+    font-size: 15px;
+}
+
+.quad-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+hr {
+    width: 88%;
+}
+
+.footer-contact {
+    text-align: center;
+}
+footer {
+    color:#787878;
+    line-height: 19px;
+    font-size: 0.9em;
+}
+footer a {
+    color: #787878;
+}
+
+footer a:hover {
+    color: #787878;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.footer-contact h2 {
+    padding: 25px;
+}
+
+.footer-button {
+    padding: 13px 34px;
+    background: white;
+    border: 1px solid black;
+    margin-bottom: 25px;
+}
+
+.footer-button:hover {
+    background: black;
+    color: white;
+}
+
+.locations-row {
+    padding: 80px 0px 50px 0px;
+}
+
+#footer-email {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px rgba(0, 0, 0, .2);
+    color: black;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    height: 30px;
+}
+input:focus {
+    outline: none;
+}
+#subscribe {
+    border: none;
+    background: transparent;
+    font-weight: 700;
+    padding-left: 0px;
+    color: rgb(91, 95, 99);
+}
+
+.bottom {
+    padding: 80px 0;
+    opacity: 0.5;
 }
