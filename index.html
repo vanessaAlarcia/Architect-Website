@@ -19,11 +19,45 @@
     <nav class="navbar navbar-light">
         <div class="container-fluid mobile-bar">
             <img id="hyde-logo" src="img/hhlogo.png" alt="Hyde and Hyde Logo"/>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarModal">
+            <button class="navbar-toggler" type="button" id="myBtn">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
     </nav>
+
+    <!--Modal HTML Starts Here; note that I added id="myBtn" to button in nav above-->
+    <div id="myModal" class="modal-test">
+        <img class="img-modal" src="https://source.unsplash.com/_6ROq_LmdkM">
+        <div class="span">
+            <span class="close">&times;</span>
+        </div>
+        <div class="modal-stuff">
+            
+                <p>
+                    <a class="modal-list-item" href="index.html">Home</a>
+                </p>
+                <p>
+                    <a class="modal-list-item" href="#">Works</a>
+                </p>
+                <p>
+                    <a class="modal-list-item" href="#">Objects</a>
+                </p>
+                <p>
+                    <a class="modal-list-item" href="#">Journal</a>
+                </p>
+                <p>
+                    <a class="modal-list-item" href="#">Films</a>
+                </p>
+                <p>
+                    <a class="modal-list-item" href="#">Studio</a>
+                </p>
+                <p>
+                    <a class="modal-list-item" href="contact.html">Contact</a>
+                </p>
+            
+        </div>
+    </div>
+    <!--Modal HTML ends Here-->
 
     <header class="jumbotron">
         <div class="container">
@@ -41,7 +75,7 @@
     
     <div class="container gallery-container mt-4">
         <div class="row">
-            <div class="col-8">
+            <div class="col-sm-8">
                 <div class="card bg-dark text-white gallery-card-left">
                     <img class="card-img" src="img/carousel-left.jpg" alt="Works" id="gallery-img-left"/>
                     <div class="card-img-overlay">
@@ -50,7 +84,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-sm-4">
                 <div class="card bg-dark text-white gallery-card-right">
                     <img class="card-img" src="img/Blanket.jpg" alt="Objects" id="gallery-img-right"/>
                     <div class="card-img-overlay">
@@ -65,7 +99,7 @@
     
     <div class="container studio-container mt-5">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12">
                 <div class="studio-img-div">
                     <img id="studio" src ="img/studio.jpg" alt="studio image" />
                 </div>
@@ -74,14 +108,14 @@
                         <p>Studio</p>
                     </div>
                     <div class="studio-subtitle">
-                        <p>—How we work</p>
+                        <p>— How we work</p>
                     </div>
                 </div>
             </div>
         </div>
 
     <div class="row carousel-header">
-            <div class = "col-md-11">
+            <div class = "col-sm-11">
                 <div class="words">
                     <p>Words</p>
                 </div>
@@ -97,7 +131,7 @@
          </div>
         
         <div class= "row">
-            <div class = "col-md-12">
+            <div class = "col-sm-12">
                 <div class="multi-item-carousel">
                     
                     <div class="carousel_track-container">
@@ -160,24 +194,24 @@
         </div>
 
         <div class="row quad-row">
-            <div class = "col-md-3 quad">
+            <div class = "col-sm-3 quad">
                 <div class = "cube quad-words">
                     <h5>Architecture</h5>
                     <p>Hyde + Hyde work with discerning clients around the world to both conceive and create deeply thoughtful buildings and objects.</p>
                 </div>
             </div>
-            <div class = "col-md-3 quad">
+            <div class = "col-sm-3 quad">
                 <div class = "cube">
                     <img class="quad-img" src ="img/quad-left.jpg">
                 </div>
             </div>
-            <div class = "col-md-3 quad">
+            <div class = "col-sm-3 quad">
                 <div class = "cube quad-words">
                     <h5>Insight</h5>
                     <p>Wildness, luxury and authenticity weave throughout our work in the pursuit of an architecture in harmony with nature, its systems and forces.</p>
                 </div>
             </div>
-            <div class= "col-md-3 quad">
+            <div class= "col-sm-3 quad">
                 <div class = "cube">
                     <img class="quad-img" src="img/quadRight.jpeg">
                 </div>
@@ -198,7 +232,7 @@
 
         <div class = "container">
             <div class="row locations-row">
-                <div class = "col-md-3">
+                <div class = "col-sm-3">
                     <h5>Cardiff</h5>
                     <p>                       
                         Hyde + Hyde Architects<br />
@@ -209,7 +243,7 @@
                     </p>
                     <a href="https://www.google.co.uk/maps/place/Hyde+%2B+Hyde+Architects/@51.48467,-3.178911,15z/data=!4m5!3m4!1s0x486e1ca64d4ae0eb:0x92628f6cf42c9319!8m2!3d51.484095!4d-3.191517?hl=en" target="_blank">Map</a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <h5>Swansea</h5>
                     <p>
                         Hyde + Hyde Architects<br />
@@ -220,7 +254,7 @@
                     </p>
                     <a href="https://www.google.co.uk/maps/place/Hyde+%2B+Hyde+Architects/@51.620215,-3.941259,16z/data=!4m5!3m4!1s0x0:0x37a72bce1a679593!8m2!3d51.618643!4d-3.941265" target="_blank">Map</a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <h5>Oxford</h5>
                     <p>
                         Hyde + Hyde Architects<br />
@@ -233,7 +267,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <h5>Infomation</h5>
                     <p>
                         Newsletter<br />
@@ -243,7 +277,7 @@
                         Sustainability<br />
                     </p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <h5>Contact</h5>
                     <p>
                         t +44 (0) 1792 420 838<br />
@@ -253,7 +287,7 @@
                         press@hydearchitects.com<br />
                     </p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <h5>Newsletter</h5>
                     <p>
                         Our newsletter is here to inspire you. A curation of good things.
@@ -264,7 +298,7 @@
                     <button type="submit" id="subscribe" form="newsletter-footer">Subscribe</button>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <h5>Social</h5>
                     <p>
                         <a href="https://www.instagram.com/hyde_architects/" target="_blank">Instagram</a><br />
@@ -275,11 +309,11 @@
                 </div>
             </div>
             <div class="row bottom">
-                <div class="col-md-10">
+                <div class="col-sm-10">
                     Site is a recreation of Hyde + Hyde's website for the purpose of practice.<br />
                     <a href="https://www.hydearchitects.com/" target="_blank">Click Here</a> for original website.
                 </div>
-                <div class="col-md-2">
+                <div class="col-sm-2">
                     <a href="#">Top of page</a>
                 </div>
 
@@ -291,6 +325,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
     
 </body>
 </html>

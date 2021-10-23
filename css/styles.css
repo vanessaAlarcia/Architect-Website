@@ -9,12 +9,11 @@ body {
     margin-left: 50px;
 }
 
-
 .mobile-bar {
     padding: 10px 0;
 }
 
-.navbar-light .navbar-toggler{
+#myBtn {
     border-color: transparent;
     margin-right: 40px;
 }
@@ -54,6 +53,59 @@ body {
     margin:30px;
     margin-left: 0px;
 } */
+
+/*added modal css here*/
+.modal-test {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(92, 84, 80);
+}
+
+.img-modal {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.4;
+}
+
+.modal-stuff {
+  color: white;
+  font-size: 4vh;
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+}
+
+.modal-stuff a {
+    text-decoration: none;
+    color: white;
+}
+
+.close {
+  position: absolute;
+  top: 2%;
+  left:95%;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*modal css ends here*/
 
 .card, .jumbotron {
     border-radius: 0;
@@ -96,8 +148,9 @@ body {
 }
 
 .studio-subtitle p {
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 100;
+    padding-top: 5px;
 }
 
 .carousel-header {
@@ -238,7 +291,7 @@ footer a:hover {
     padding: 80px 0px 50px 0px;
 }
 
-#footer-email {
+#footer-email, .newsletter-email-input {
     border-top: none;
     border-left: none;
     border-right: none;
@@ -248,6 +301,7 @@ footer a:hover {
     margin-bottom: 5px;
     height: 30px;
 }
+
 input:focus {
     outline: none;
 }
@@ -262,4 +316,33 @@ input:focus {
 .bottom {
     padding: 80px 0;
     opacity: 0.5;
+}
+
+/*contact page*/
+.work-together {
+    padding-right: 100px;
+    line-height: 23px;
+}
+
+#contact-jumbotron {
+background-image: url(https://source.unsplash.com/-0PfqN1va64);
+margin-top: 60px;
+margin-bottom: 40px;
+}
+
+#contact-jumbotron-title {
+    text-align: center;
+}
+
+.contact-jt-btn {
+    padding: 13px 34px;
+    background:transparent;
+    color: white;
+    border: 1px solid white;
+    margin-bottom: 25px;
+}
+
+.contact-jt-btn:hover {
+    background: white;
+    color: black;
 }

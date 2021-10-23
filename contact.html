@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap" rel="stylesheet">
+
+    <title>Architect Website</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light">
+        <div class="container-fluid mobile-bar">
+            <img id="hyde-logo" src="img/hhlogo.png" alt="Hyde and Hyde Logo"/>
+            <button class="navbar-toggler" type="button" id="myBtn">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!--Modal HTML Starts Here; note that I added id="myBtn" to button in nav above-->
+    <div id="myModal" class="modal-test">
+        <img class="img-modal" src="https://source.unsplash.com/_6ROq_LmdkM">
+        <div class="span">
+            <span class="close">&times;</span>
+        </div>
+        <div class="modal-stuff">
+            
+                <p>
+                    <a class="modal-list-item" href="index.html">Home</a>
+                </p>
+                <p>
+                    <a class="modal-list-item" href="#">Works</a>
+                </p>
+                <p>
+                    <a class="modal-list-item" href="#">Objects</a>
+                </p>
+                <p>
+                    <a class="modal-list-item" href="#">Journal</a>
+                </p>
+                <p>
+                    <a class="modal-list-item" href="#">Films</a>
+                </p>
+                <p>
+                    <a class="modal-list-item" href="#">Studio</a>
+                </p>
+                <p>
+                    <a class="modal-list-item" href="contact.html">Contact</a>
+                </p>
+            
+        </div>
+    </div>
+    <!--Modal HTML ends Here-->
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 titleContainer">
+                    <h1 id="jumbotron-title"><strong>Contact</strong></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Let's Work Together</h3>
+                <div class="work-together">
+                    <p>We work local and global. Our award-winning work extends from the wild fringe of West Wales, Gower Peninsula, Cardiff, North Wales, Bristol, Devon, Somerset, Oxford, Suffolk and right across the UK. We have worked in the USA, Europe and the Faroe Islands.</p>
+                </div>
+                <div class="work-together">
+                    <p>We look forward to discussing your dream, wherever you are in the world. Please fill out the form or get in touch below and let's begin the journey.</p>
+                </div>
+                <div class="work-together">
+                    <p>
+                        t +44 (0) 1792 420 838<br />
+                        mail@hydearchitects.com<br />
+                    </p>
+                </div>
+                <div class="work-together">
+                    <p>
+                        Press and publicity enquiries to:<br />
+                        press@hydearchitects.com
+                    </p>
+                </div>
+                <div class="work-together">
+                    <h4>Newsletter</h4>
+                    <p>
+                        Our newsletter is here to inspire you.<br />A curation of good things.
+                    </p>
+                    <form id="newsletter">
+                        <div class="form-row">
+                            <div class="col-auto">
+                                <input type="email" id="newsletter-email" class="newsletter-email-input" name="footer-email" placeholder="Email Address      ">
+                                <small id="newsletter-email" class="form-text text-muted">We respect your privacy.</small>
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" id="subscribe" form="newsletter">Sign Up</button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" class="form-control" id="firstName">
+                            <small id="firstNameSmall" class="form-text text-muted">First Name</small>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" class="form-control" id="lastName">
+                            <small id="lastNameSmall" class="form-text text-muted">Last Name</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="formControlTextarea">Tell Us About Your Project *</label>
+                        <textarea class="form-control" id="formControlTextarea" rows="3"></textarea>
+                    </div>
+                </form>
+                <button class ="footer-button" form="contact-form">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron" id="contact-jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 titleContainer" id="contact-jumbotron-title"> 
+                    <h1 id="jumbotron-title">We are always interested to hear from exceptionally<br /> talented people to join our team</h1>
+                    <br />
+                    <button class = "contact-jt-btn">See Current Openings</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+        <div class="footer-contact">
+            <h2>Let's work together</h2>
+            <div>
+                <button class = "footer-button">Get in touch</button>
+            </div>
+        </div>
+        <hr>
+
+        <div class = "container">
+            <div class="row locations-row">
+                <div class = "col-md-3">
+                    <h5>Cardiff</h5>
+                    <p>
+                        Hyde + Hyde Architects<br />
+                        Sophia House<br />
+                        28 Cathedral Road<br />
+                        Cardiff<br />
+                        CF11 9LJ
+                    </p>
+                    <a href="https://www.google.co.uk/maps/place/Hyde+%2B+Hyde+Architects/@51.48467,-3.178911,15z/data=!4m5!3m4!1s0x486e1ca64d4ae0eb:0x92628f6cf42c9319!8m2!3d51.484095!4d-3.191517?hl=en" target="_blank">Map</a>
+                </div>
+                <div class="col-md-3">
+                    <h5>Swansea</h5>
+                    <p>
+                        Hyde + Hyde Architects<br />
+                        Royal Buildings<br />
+                        10 Princess Way<br />
+                        Swansea<br />
+                        SA1 3LW
+                    </p>
+                    <a href="https://www.google.co.uk/maps/place/Hyde+%2B+Hyde+Architects/@51.620215,-3.941259,16z/data=!4m5!3m4!1s0x0:0x37a72bce1a679593!8m2!3d51.618643!4d-3.941265" target="_blank">Map</a>
+                </div>
+                <div class="col-md-3">
+                    <h5>Oxford</h5>
+                    <p>
+                        Hyde + Hyde Architects<br />
+                        Belsyre Court, 1st Floor<br />
+                        57 Woodstock Road<br />
+                        Oxford<br />
+                        OX2 6HJ<br />
+                    </p>
+                    <a href="https://www.google.co.uk/maps/place/Woodstock+Rd,+Oxford+OX2+6HJ,+UK/@51.7624382,-1.2653509,17z/data=!3m1!4b1!4m5!3m4!1s0x4876c41deba8ef81:0x1a2633bc7155cd63!8m2!3d51.7622631!4d-1.263302" target="_blank">Map</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Infomation</h5>
+                    <p>
+                        Newsletter<br />
+                        Opportunities<br />
+                        Privacy + Terms<br />
+                        Recognition<br />
+                        Sustainability<br />
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <p>
+                        t +44 (0) 1792 420 838<br />
+                        mail@hydearchitects.com<br />
+                        <br />
+                        Press and publicity enquiries to<br />
+                        press@hydearchitects.com<br />
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Newsletter</h5>
+                    <p>
+                        Our newsletter is here to inspire you. A curation of good things.
+                    </p>
+                    <form id="newsletter-footer">
+                        <input type="email" id="footer-email" name="footer-email" placeholder="Email Address      ">
+                    </form>
+                    <button type="submit" id="subscribe" form="newsletter-footer">Subscribe</button>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Social</h5>
+                    <p>
+                        <a href="https://www.instagram.com/hyde_architects/" target="_blank">Instagram</a><br />
+                        <a href="https://twitter.com/hyde_architects" target="_blank">Twitter</a><br />
+                        <a href="https://www.pinterest.com/hydearchitects/our-work/" target="_blank">Pinterest</a><br />
+                        <a href="https://www.youtube.com/channel/UCHF5oe5ntZl000hCX4XSU9w" target="_blank">YouTube</a><br />
+                    </p>
+                </div>
+            </div>
+            <div class="row bottom">
+                <div class="col-md-10">
+                    Site is a recreation of Hyde + Hyde's website for the purpose of practice.<br />
+                    <a href="https://www.hydearchitects.com/" target="_blank">Click Here</a> for original website.
+                </div>
+                <div class="col-md-2">
+                    <a href="#">Top of page</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
+    
+</body>
+</html>
