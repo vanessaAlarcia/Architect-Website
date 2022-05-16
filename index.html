@@ -59,14 +59,16 @@
     </div>
     <!--Modal HTML ends Here-->
 
-    <header class="jumbotron">
-        <div class="container">
-            <!-- <video autoplay muted loop id="jumbotronVideo">
-                <source src="videos/pexels-mikhail-nilov-6497972.mp4" type="video/mp4">
-            </video> -->
-            <div class="row">
-                <div class="col-12 titleContainer">
-                    <h1 id="jumbotron-title"><strong>Hyde + Hyde Architects</strong><br />We Build Emotion</h1>
+    <header class="jumbotron__container">
+        <div class="jumbotron">
+            <div class="container">
+                <!-- <video autoplay muted loop id="jumbotronVideo">
+                    <source src="videos/pexels-mikhail-nilov-6497972.mp4" type="video/mp4">
+                </video> -->
+                <div class="row">
+                    <div class="col-12 titleContainer">
+                        <h1 id="jumbotron-title"><strong>Hyde + Hyde Architects</strong><br />We Build Emotion</h1>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,7 +77,7 @@
     
     <div class="container gallery-container mt-4">
         <div class="row">
-            <div class="col-sm-8">
+            <div class="col-12 col-lg-8">
                 <div class="card bg-dark text-white gallery-card-left">
                     <img class="card-img" src="img/carousel-left.jpg" alt="Works" id="gallery-img-left"/>
                     <div class="card-img-overlay">
@@ -84,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-12 pt-4 col-lg-4 pt-lg-0">
                 <div class="card bg-dark text-white gallery-card-right">
                     <img class="card-img" src="img/Blanket.jpg" alt="Objects" id="gallery-img-right"/>
                     <div class="card-img-overlay">
@@ -113,14 +115,16 @@
                 </div>
             </div>
         </div>
+    </div>
 
-    <div class="row carousel-header">
-            <div class = "col-sm-11">
+    <div class="container">
+        <div class="row carousel-header">
+            <div class = "col-9">
                 <div class="words">
                     <p>Words</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-3 text-right text-nowrap justify-content-end">
                 <button class="carousel_button carousel_button--left is-hidden">
                     <img src="img/left-arrow.png" alt="">
                 </button>
@@ -128,15 +132,17 @@
                     <img src="img/right-arrow.png" alt="">
                 </button>
             </div>
-         </div>
-        
+        </div>
+
         <div class= "row">
             <div class = "col-sm-12">
                 <div class="multi-item-carousel">
                     
                     <div class="carousel_track-container">
-                        <div class="carousel_track"><!--carousel-inner-->
-                            <div class="carousel_slide current-slide"><!--carousel-item-->
+                        <!--carousel-inner-->
+                        <div class="carousel_track">
+                            <!--carousel-item-->
+                            <div class="carousel_slide current-slide">
                                 <div class="row slide-row">
                                     <div class="col-4">
                                         <img class="carousel_image" src="img/carousel-left.jpg" alt="">
@@ -152,8 +158,9 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="carousel_slide"><!--carousel-item-->
+                            
+                            <!--carousel-item-->
+                            <div class="carousel_slide">
                                 <div class="row slide-row">
                                     <div class="col-4">
                                         <img class="carousel_image" src="img/remarkable_places_drawing-cropped.jpg" alt="">
@@ -170,7 +177,8 @@
                                 </div>
                             </div>
 
-                            <div class="carousel_slide"><!--carousel-item-->
+                            <!--carousel-item-->
+                            <div class="carousel_slide">
                                 <div class="row slide-row">
                                     <div class="col-4">
                                         <img class="carousel_image" src="img/ocean-life.jpg" alt="">
@@ -192,49 +200,54 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="container">
         <div class="row quad-row">
-            <div class = "col-sm-3 quad">
-                <div class = "cube quad-words">
+            <div class = "col-12 col-md-6 col-lg-3 quad">
+                <div class = "cube quad-words d-flex flex-column justify-content-center">
                     <h5>Architecture</h5>
                     <p>Hyde + Hyde work with discerning clients around the world to both conceive and create deeply thoughtful buildings and objects.</p>
                 </div>
             </div>
-            <div class = "col-sm-3 quad">
+            <div class = "col-12 py-2 col-md-6 col-lg-3 quad">
                 <div class = "cube">
                     <img class="quad-img" src ="img/quad-left.jpg">
                 </div>
             </div>
-            <div class = "col-sm-3 quad">
+            <div class = "col-12 col-md-6 col-lg-3 quad">
                 <div class = "cube quad-words">
                     <h5>Insight</h5>
                     <p>Wildness, luxury and authenticity weave throughout our work in the pursuit of an architecture in harmony with nature, its systems and forces.</p>
                 </div>
             </div>
-            <div class= "col-sm-3 quad">
+            <div class= "col-12 col-md-6 col-lg-3 quad">
                 <div class = "cube">
-                    <img class="quad-img" src="img/quadRight.jpeg">
+                    <img class="quad-img " src="img/quadRight.jpeg">
                 </div>
             </div>
         </div>
-
     </div><!--end container div-->
 
     <footer>
         <hr>
-        <div class="footer-contact">
-            <h2>Let's work together</h2>
-            <div>
-                <button class = "footer-button">Get in touch</button>
+        <div class = "container">
+            <div class="row">
+                <div class="col-12 footer-contact">
+                    <h2>Let's work together</h2>
+                    <div>
+                        <button class = "footer-button">Get in touch</button>
+                    </div>
+                </div>
             </div>
         </div>
         <hr>
 
         <div class = "container">
             <div class="row locations-row">
-                <div class = "col-sm-3">
+                <div class = "col-sm-12 col-md-3">
                     <h5>Cardiff</h5>
-                    <p>                       
+                    <p>
                         Hyde + Hyde Architects<br />
                         Sophia House<br />
                         28 Cathedral Road<br />
@@ -243,7 +256,7 @@
                     </p>
                     <a href="https://www.google.co.uk/maps/place/Hyde+%2B+Hyde+Architects/@51.48467,-3.178911,15z/data=!4m5!3m4!1s0x486e1ca64d4ae0eb:0x92628f6cf42c9319!8m2!3d51.484095!4d-3.191517?hl=en" target="_blank">Map</a>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-12 col-md-3">
                     <h5>Swansea</h5>
                     <p>
                         Hyde + Hyde Architects<br />
@@ -254,7 +267,7 @@
                     </p>
                     <a href="https://www.google.co.uk/maps/place/Hyde+%2B+Hyde+Architects/@51.620215,-3.941259,16z/data=!4m5!3m4!1s0x0:0x37a72bce1a679593!8m2!3d51.618643!4d-3.941265" target="_blank">Map</a>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-12 col-md-3">
                     <h5>Oxford</h5>
                     <p>
                         Hyde + Hyde Architects<br />
@@ -267,7 +280,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-12 col-md-3">
                     <h5>Infomation</h5>
                     <p>
                         Newsletter<br />
@@ -277,7 +290,7 @@
                         Sustainability<br />
                     </p>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-12 col-md-3">
                     <h5>Contact</h5>
                     <p>
                         t +44 (0) 1792 420 838<br />
@@ -287,7 +300,7 @@
                         press@hydearchitects.com<br />
                     </p>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-12 col-md-3">
                     <h5>Newsletter</h5>
                     <p>
                         Our newsletter is here to inspire you. A curation of good things.
@@ -298,7 +311,7 @@
                     <button type="submit" id="subscribe" form="newsletter-footer">Subscribe</button>
                 </div>
 
-                <div class="col-sm-3">
+                <div class="col-sm-12 col-md-3">
                     <h5>Social</h5>
                     <p>
                         <a href="https://www.instagram.com/hyde_architects/" target="_blank">Instagram</a><br />

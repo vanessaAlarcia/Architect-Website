@@ -16,7 +16,7 @@ const slideWidth = slides[0].getBoundingClientRect().width;
 // slides[0].style.left = slideWidth * 0 + "px";
 // slides[1].style.left = slideWidth + 1 + "px";
 // slides[2].style.left = slideWidth * 2 + "px";
-// or, we can be quicker and make a loop insstead:
+// or, we can be quicker and make a loop instead:
 //slides.forEach((slide, index) => {
 //    slide.style.left = slideWidth * index + "px";
 //})
@@ -27,6 +27,7 @@ const setSlidePosition = (slide, index) => {
 
 slides.forEach(setSlidePosition);
 
+// slide moving mechanism
 const moveToSlide = (track, currentSlide, targetSlide) => {
     track.style.transform = 'translateX(-' + targetSlide.style.left + ")";
     //remove the current-slide class and add it onto the next slide:
